@@ -1,11 +1,11 @@
 import * as React from "react";
-import ReactPDF, {Text, View} from "@react-pdf/renderer";
+import {Text, View} from "@react-pdf/renderer";
 import {getDefaultBorderIncludes, transformToArray} from "./Utils";
 import { Style } from '@react-pdf/types';
 
 /**
  * Whether to include borders or not.
- * Depending on the context some toggles will not have any effect.
+ * Depending on the context, some toggles will not have any effect.
  */
 export interface TableBorder {
     /**
@@ -79,7 +79,7 @@ export class TableCell extends React.PureComponent<TableCellProps> {
             content = (
                 <Text>{this.props.children.toString()}</Text>
             );
-        } elseif (Array.isArray(this.props.children) {
+        } else if (Array.isArray(this.props.children)) {
             content = (
                 <Text>{this.props.children.join('')}</Text>
             );

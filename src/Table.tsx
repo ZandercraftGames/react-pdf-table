@@ -55,11 +55,16 @@ export class Table extends React.PureComponent<TableProps> {
             tableBody = React.createElement(TableBody);
         }
 
+
         tableBody = React.cloneElement(tableBody, {
+            // @ts-ignore
             data: tableBody?.props?.data ?? this.props.data ?? [],
             renderTopBorder: this.props.isNested ? false : !tableHeader,
+            // @ts-ignore
             zebra: tableBody?.props?.zebra ?? this.props.zebra ?? false,
+            // @ts-ignore
             evenRowColor: tableBody?.props?.evenRowColor ?? this.props.evenRowColor ?? '',
+            // @ts-ignore
             oddRowColor: tableBody?.props?.oddRowColor ?? this.props.oddRowColor ?? '',
         });
 

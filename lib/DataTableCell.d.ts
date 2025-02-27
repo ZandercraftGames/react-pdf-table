@@ -5,5 +5,5 @@ export interface DataTableCellProps extends TableCellProps {
     getContent: (data: any) => React.ReactNode | JSX.Element | string | number;
 }
 export declare class DataTableCell extends React.PureComponent<DataTableCellProps> {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

@@ -10,5 +10,5 @@ export interface TableProps extends ZebraProps {
     children?: React.ReactNode;
 }
 export declare class Table extends React.PureComponent<TableProps> {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }
