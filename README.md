@@ -12,18 +12,13 @@ The goal behind this library is to provide a declarative way of defining tables 
 To get started, run:
 
 ```
- npm install "@david.kucsai/react-pdf-table"
- ```
- 
- On Windows you must escape the '.':
- ```
- npm install "@david`.kucsai/react-pdf-table"
+ npm install "@zandercraftgames/react-pdf-table"
  ```
  
 
 ## Documentation
 
-Refer to [API Documentation](https://github.com/dmk99/react-pdf-table/tree/master/docs/typedoc/README.md) for the type definitions.
+Refer to [API Documentation](https://github.com/zandercraftgames/react-pdf-table/tree/master/docs/typedoc/README.md) for the type definitions.
 
 ### Notes
 
