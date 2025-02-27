@@ -43,5 +43,4 @@ jspm_packages
 
 .idea
 *.iml
-package-lock.json
 yarn.lock
