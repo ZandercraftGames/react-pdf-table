@@ -57,6 +57,11 @@ export interface TableCellProps extends TableBorder {
     fontSize?: number | string;
 
     children?: React.ReactNode;
+
+    /**
+     * Whether to use react-pdf's automatic wrapping for the cell content. If not defined it will be true.
+     */
+    wrap?: boolean;
 }
 
 /**
@@ -73,6 +78,10 @@ export class TableCell extends React.PureComponent<TableCellProps> {
         } else if(typeof this.props.children === "number") {
             content = (
                 <Text>{this.props.children.toString()}</Text>
+            );
+        } elseif (Array.isArray(this.props.children) {
+            content = (
+                <Text>{this.props.children.join('')}</Text>
             );
         } else {
             content = this.props.children;
@@ -98,7 +107,7 @@ export class TableCell extends React.PureComponent<TableCellProps> {
         return (
             <View
                 style={mergedStyles}
-                wrap={true}
+                wrap={this.props.wrap ?? true}
             >
                 {content}
             </View>
