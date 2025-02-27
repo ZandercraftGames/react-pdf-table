@@ -54,6 +54,11 @@ export interface TableCellProps extends TableBorder {
      * The font-size to apply to the cell.
      */
     fontSize?: number | string;
+
+    /**
+     * Whether to use react-pdf's automatic wrapping for the cell content. If not defined it will be true.
+     */
+    wrap?: boolean;
 }
 
 /**
@@ -99,7 +104,7 @@ export class TableCell extends React.PureComponent<TableCellProps> {
         return (
             <View
                 style={mergedStyles}
-                wrap={true}
+                wrap={this.props.wrap ?? true}
             >
                 {content}
             </View>
