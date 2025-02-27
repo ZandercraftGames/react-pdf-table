@@ -1,12 +1,15 @@
-# @david.kucsai/react-pdf-table
+# @zandercraftgames/react-pdf-table
 
 This library is designed to be used with [@react-pdf/renderer](https://www.npmjs.com/package/@react-pdf/renderer).
 
 The goal behind this library is to provide a declarative way of defining tables in a PDF.
 
-[![npm version](http://img.shields.io/npm/v/@david.kucsai/react-pdf-table.svg?style=flat)](https://npmjs.org/package/@david.kucsai/react-pdf-table "View this project on npm")
+[![npm version](http://img.shields.io/npm/v/@zandercraftgames/react-pdf-table.svg?style=flat)](https://npmjs.org/package/@zandercraftgames/react-pdf-table "View this project on npm")
 
-To get started run:
+> This NPM package was forked from **@david.kucsai/react-pdf-table** which seems to be abandoned.  
+> It has been forked with the goal of providing a maintained version that resolves some issues in the parent repository.
+
+To get started, run:
 
 ```
  npm install "@david.kucsai/react-pdf-table"
@@ -128,7 +131,7 @@ To run the storybook:
 yarn storybook
 ```
 
-Compile to typescript: 
+Compile to TypeScript: 
 ```
 yarn recompile
 ```
